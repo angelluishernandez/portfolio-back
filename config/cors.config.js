@@ -1,7 +1,7 @@
 const cors = require("cors");
 
 const corsMiddleware = cors({
-	origin: process.env.REACT_APP_API_URL || "http://localhost:3000",
+	origin: "https://angelluishernandez.herokuapp.com",
 	allowedHeaders: ["Content-Type", "Origin"],
 	credentials: true,
 });
