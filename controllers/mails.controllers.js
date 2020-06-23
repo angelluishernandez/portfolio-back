@@ -9,7 +9,7 @@ module.exports.sendEmail = (req, res, next) => {
 	const { name, email, subject, message } = req.body;
 
 	const mailOptions = {
-		from: `angelhernandezironhack@gmail.com`,
+		from: MAIL_USER,
 		to: MAIL_USER,
 		subject: subject,
 		text: message,
