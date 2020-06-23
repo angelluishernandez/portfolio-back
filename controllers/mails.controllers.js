@@ -7,6 +7,7 @@ module.exports.home = (req, res, next) => {
 
 module.exports.sendEmail = (req, res, next) => {
 	const { name, email, subject, message } = req.body;
+	console.log(req.body);
 
 	const mailOptions = {
 		from: MAIL_USER,
